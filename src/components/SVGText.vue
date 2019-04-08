@@ -14,7 +14,7 @@
                 />
         </div>
         <h2>Simple</h2>
-        <svg v-bind:style="{'width': width}">
+        <svg :width="prefixedWidth">
             <TextItem :width="width" :inner-text="exampleText" />
         </svg>
       </div>
@@ -33,6 +33,11 @@ export default {
         return {
             exampleText: 'This is really long text',
             width: 100
+        }
+    },
+    computed: {
+        prefixedWidth: function () {
+            return this.width + "px"
         }
     }
 }

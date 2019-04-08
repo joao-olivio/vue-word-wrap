@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.6"
+    "es6-object-assign": "^1.1.0",
+    "innersvg-polyfill": "0.0.2",
+    "vue": "^2.6.6",
+    "vue-svg-textwrap": "0.0.19"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
